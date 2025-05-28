@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Endereços</title>
+    <link rel="stylesheet" href="api.css"/>
+    <script src="api.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Cadastro de Endereços</h1>
+    
+        <div class="form-group">
+          <label for="cep">CEP:</label>
+          <input type="text" id="cep" maxlength="9" placeholder="Digite o CEP" />
+        </div>
+    
+        <div class="form-group">
+          <label for="rua">Rua:</label>
+          <input type="text" id="rua" readonly />
+        </div>
+    
+        <div class="form-group">
+          <label for="bairro">Bairro:</label>
+          <input type="text" id="bairro" readonly />
+        </div>
+    
+        <div class="form-group">
+          <label for="cidade">Cidade:</label>
+          <input type="text" id="cidade" readonly />
+        </div>
+    
+        <div class="form-group">
+          <label for="estado">Estado:</label>
+          <input type="text" id="estado" readonly />
+        </div>
+    
+        <button id="salvar">Salvar Endereço</button>
+        <p id="mensagem" class="mensagem"></p>
+    
+        <h2>Endereços Cadastrados</h2>
+        <table id="tabela">
+          <thead>
+            <tr>
+              <th>CEP</th>
+              <th>Rua</th>
+              <th>Bairro</th>
+              <th>Cidade</th>
+              <th>Estado</th>
+            </tr>
+          </thead>
+          <tbody></tbody>
+        </table>
+      </div>
+    
+      <script src="api.js"></script>
+  
+</body>
+</html>
